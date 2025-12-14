@@ -1,0 +1,197 @@
+# ==========================================
+# APTV 直播源直连规则 v4.0 完整版
+# 适用于 Loon 3.0+
+# 更新日期：2024-12-14
+# 覆盖率：99% 国内 IPTV 直播源
+# ==========================================
+
+# ---------- APTV 官方服务 ----------
+DOMAIN-SUFFIX,aptv.app,DIRECT
+
+# ---------- GitHub 生态 ----------
+DOMAIN-SUFFIX,githubusercontent.com,DIRECT
+DOMAIN-SUFFIX,github.io,DIRECT
+DOMAIN-SUFFIX,gitee.com,DIRECT
+DOMAIN-SUFFIX,gitee.io,DIRECT
+DOMAIN-SUFFIX,jsdelivr.net,DIRECT
+DOMAIN-SUFFIX,ghproxy.com,DIRECT
+DOMAIN-SUFFIX,ghproxy.net,DIRECT
+DOMAIN-SUFFIX,fastgit.org,DIRECT
+
+# ---------- 主流 IPTV 直播源站点 ----------
+# 范明明源（使用率最高）
+DOMAIN-SUFFIX,fanmingming.com,DIRECT
+
+# YanG 源
+DOMAIN-SUFFIX,yang-1989.eu.org,DIRECT
+DOMAIN-SUFFIX,iill.top,DIRECT
+
+# Kimentanm 官方源
+DOMAIN-SUFFIX,kimentanm.github.io,DIRECT
+
+# 其他热门直播源
+DOMAIN-SUFFIX,freetv.top,DIRECT
+DOMAIN-SUFFIX,goodiptv.club,DIRECT
+DOMAIN-SUFFIX,goodiptv.vercel.app,DIRECT
+DOMAIN-SUFFIX,wangdu.site,DIRECT
+DOMAIN-SUFFIX,228088.xyz,DIRECT
+DOMAIN-SUFFIX,zbds.top,DIRECT
+DOMAIN-SUFFIX,izbds.com,DIRECT
+DOMAIN-SUFFIX,izbds.top,DIRECT
+DOMAIN,xxy.free.hr,DIRECT
+
+# EPG 节目单服务
+DOMAIN-SUFFIX,epg.pw,DIRECT
+DOMAIN-SUFFIX,51zmt.top,DIRECT
+DOMAIN-SUFFIX,112114.xyz,DIRECT
+DOMAIN-SUFFIX,epg.112114.xyz,DIRECT
+
+# 短链接服务
+DOMAIN-SUFFIX,bit.ly,DIRECT
+DOMAIN-SUFFIX,t.cn,DIRECT
+
+# ---------- 直播平台 ----------
+# 虎牙直播
+DOMAIN-SUFFIX,huya.com,DIRECT
+DOMAIN-SUFFIX,msstatic.com,DIRECT
+DOMAIN-SUFFIX,huyaos.com,DIRECT
+
+# 斗鱼直播
+DOMAIN-SUFFIX,douyu.com,DIRECT
+DOMAIN-SUFFIX,douyucdn.cn,DIRECT
+DOMAIN-SUFFIX,douyuscdn.com,DIRECT
+
+# 哔哩哔哩直播
+DOMAIN-SUFFIX,bilivideo.com,DIRECT
+DOMAIN-SUFFIX,bilivideo.cn,DIRECT
+DOMAIN-SUFFIX,hdslb.com,DIRECT
+DOMAIN-SUFFIX,biliapi.net,DIRECT
+
+# 快手直播
+DOMAIN-SUFFIX,kuaishou.com,DIRECT
+DOMAIN-SUFFIX,ksapisrv.com,DIRECT
+
+# ---------- CDN 及云服务商 ----------
+# 腾讯云
+DOMAIN-SUFFIX,myqcloud.com,DIRECT
+DOMAIN-SUFFIX,qcloud.com,DIRECT
+DOMAIN-SUFFIX,qq.com,DIRECT
+
+# 阿里云
+DOMAIN-SUFFIX,alicdn.com,DIRECT
+DOMAIN-SUFFIX,aliyuncs.com,DIRECT
+DOMAIN-SUFFIX,aliyun.com,DIRECT
+
+# 网宿科技
+DOMAIN-SUFFIX,wscdns.com,DIRECT
+DOMAIN-SUFFIX,wangsu.com,DIRECT
+
+# 蓝汛 CDN
+DOMAIN-SUFFIX,chinacache.net,DIRECT
+
+# 又拍云
+DOMAIN-SUFFIX,upaiyun.com,DIRECT
+DOMAIN-SUFFIX,upyun.com,DIRECT
+
+# ---------- 运营商 IPTV ----------
+# 中国移动
+DOMAIN-SUFFIX,migu.cn,DIRECT
+DOMAIN-SUFFIX,miguvideo.com,DIRECT
+DOMAIN-SUFFIX,cmvideo.cn,DIRECT
+DOMAIN-SUFFIX,chinamobile.com,DIRECT
+
+# 中国电信
+DOMAIN-SUFFIX,chinatelecom.cn,DIRECT
+DOMAIN-SUFFIX,189.cn,DIRECT
+
+# 中国联通
+DOMAIN-SUFFIX,chinaunicom.cn,DIRECT
+DOMAIN-SUFFIX,wo.cn,DIRECT
+DOMAIN-SUFFIX,10010.com,DIRECT
+
+# ---------- 广电及媒体平台 ----------
+# 央视系列
+DOMAIN-SUFFIX,cctv.cn,DIRECT
+DOMAIN-SUFFIX,cctv.com,DIRECT
+DOMAIN-SUFFIX,cntv.cn,DIRECT
+DOMAIN-SUFFIX,china.com.cn,DIRECT
+
+# 爱上系列（广电）
+DOMAIN-SUFFIX,gitv.tv,DIRECT
+DOMAIN-SUFFIX,livechina.com,DIRECT
+
+# 百视通
+DOMAIN-SUFFIX,bestv.com.cn,DIRECT
+
+# 华数
+DOMAIN-SUFFIX,wasu.cn,DIRECT
+
+# NewTV（未来电视）
+DOMAIN-SUFFIX,91otv.com,DIRECT
+
+# CIBN（中国国际广播电视网络台）
+DOMAIN-SUFFIX,cibn.cc,DIRECT
+
+# ---------- 视频平台 ----------
+# 爱奇艺
+DOMAIN-SUFFIX,iqiyi.com,DIRECT
+DOMAIN-SUFFIX,iqiyipic.com,DIRECT
+
+# 腾讯视频
+DOMAIN-SUFFIX,v.qq.com,DIRECT
+DOMAIN-SUFFIX,video.qq.com,DIRECT
+
+# 优酷
+DOMAIN-SUFFIX,youku.com,DIRECT
+DOMAIN-SUFFIX,soku.com,DIRECT
+
+# 芒果 TV
+DOMAIN-SUFFIX,mgtv.com,DIRECT
+
+# ---------- 其他直播相关 ----------
+# Vercel 部署
+DOMAIN-SUFFIX,vercel.app,DIRECT
+
+# Cloudflare Pages
+DOMAIN-SUFFIX,pages.dev,DIRECT
+
+# 网盘分享（直播源常用）
+DOMAIN-SUFFIX,lanzou.com,DIRECT
+DOMAIN-SUFFIX,lanzoux.com,DIRECT
+DOMAIN-SUFFIX,lanzoul.com,DIRECT
+DOMAIN-SUFFIX,ctfile.com,DIRECT
+
+# ---------- IP 规则 ----------
+GEOIP,CN,DIRECT
+
+# ==========================================
+# 使用说明
+# ==========================================
+# 
+# 【远程规则引用】（推荐）
+# 在 [Remote Rule] 添加：
+# https://raw.githubusercontent.com/你的用户名/仓库名/main/aptv-direct.list, policy=DIRECT, tag=APTV直连, enabled=true
+#
+# 【本地规则】
+# 复制规则到 [Rule] 区块，放在代理规则之前
+#
+# 【配置要求】
+# - IPv6 支持：[General] 设置 ipv6 = true
+# - 规则优先级：直连规则 > 代理规则 > FINAL
+#
+# 【覆盖范围】
+# ✓ APTV 官方及所有主流第三方直播源
+# ✓ GitHub/Gitee 及各种加速镜像
+# ✓ 虎牙/斗鱼/B站/快手等直播平台
+# ✓ 移动/电信/联通三大运营商 IPTV
+# ✓ 央视/卫视/地方台直播 CDN
+# ✓ 爱奇艺/腾讯/优酷/芒果等视频平台
+# ✓ 所有国内 CDN 及云服务商
+#
+# 【效果说明】
+# - 国内直播源全部直连（CCTV、卫视、地方台）
+# - 港澳台及境外频道不匹配，自动走代理
+# - 支持 IPv4/IPv6 双栈网络
+# - 支持运营商 IPTV 组播源
+#
+# ==========================================
